@@ -305,7 +305,7 @@
 3. **Set Permissions**
    - Set the correct permissions:  
      ```bash
-    sudo chown -R {{user}}:www-data /var/www/html/domain.com
+     sudo chown -R {{user}}:www-data /var/www/html/domain.com
      ```
 
 4. **Create Nginx Configuration File**
