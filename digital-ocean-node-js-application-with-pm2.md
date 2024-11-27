@@ -317,8 +317,9 @@
 5. **Configure the Nginx File**
    - Add the following configuration:  
      ```nginx
-    server {  # Ensure Nginx listens on port 80 for HTTP
-    server_name www.domain.com domain.com;
+     server {  
+      # Ensure Nginx listens on port 80 for HTTP
+      server_name www.domain.com domain.com;
 
       location /{
                 #try_files $uri $uri/ =404;
@@ -336,7 +337,7 @@
             proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 
         }
-    }
+     }
      ```
 
 6. **Enable the Site**
